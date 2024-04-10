@@ -101,3 +101,6 @@ git clone ssh://git@github.com:Thrillworks/tw-appium.git
 34. Open simulators and run device of your choice.
 35. Right click on testng.xml.
 36. Click Run
+
+# Accessing reports of execution
+37. In user.dir you will find the reports folder inside reports folder you will find a timestamp folder and inside it you will find the execution reports in testReport.html format
