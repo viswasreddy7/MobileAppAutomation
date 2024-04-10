@@ -97,7 +97,7 @@ git clone ssh://git@github.com:Thrillworks/tw-appium.git
 32. Click Run
 
 # Running Tests using iOS Simulator
-33. In IntelliJ, open [test.properties] and update the .app File location in app.fileLocation, ios.deviceName(you get it from xcode devices and simulators), app.isAndroid as false, ios.deviceVersion
+33. In IntelliJ, open [test.properties] and update the .app File location in app.fileLocation, ios.deviceName(you get it from xcode devices and simulators), app.isAndroid as false, ios.deviceVersion, and ios.deviceUUID
 34. Open simulators and run device of your choice.
 35. Right click on testng.xml.
 36. Click Run
