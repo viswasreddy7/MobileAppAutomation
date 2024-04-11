@@ -78,6 +78,7 @@ public class SamplePage extends Listeners{
     }
 
     public void selectFavLeague(String league, String LeagueShort) {
+        waitUntilVisible(getStartedButton);
         getStartedButton.click();
         waitUntilVisible(nflFootball);
         selectLeague = driver.findElement(By.xpath("//android.widget.TextView[@text='"+league+"']"));
@@ -119,6 +120,7 @@ public class SamplePage extends Listeners{
     }
 
     public void signUpLater() {
+        waitUntilVisible(maybeLtrSignupBtn);
         if (maybeLtrSignupBtn.isDisplayed()) {
             maybeLtrSignupBtn.click();
             ExtentReporter.getTest().log(Status.PASS,"Clicked on may be later signup button.");
@@ -130,6 +132,7 @@ public class SamplePage extends Listeners{
         notifyPrefer = driver.findElement(By.xpath("//android.widget.Button[@text='"+Preference+"']"));
         notifyPrefer.click();
         ExtentReporter.getTest().log(Status.INFO,"Notification preference is "+Preference);
+        waitUntilVisible(closeIcon);
         if (closeIcon.isDisplayed()) {
             closeIcon.click();
             ExtentReporter.getTest().log(Status.PASS,"Advertisement modal is closed.");
